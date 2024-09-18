@@ -12,7 +12,8 @@ result = []
 for i in range(len(arr_candidates)):
     for j in range(len(arr_candidates[i])):
         arr_candidates[i][j] *= weight[j]
-    #print(arr_candidates[i])
+    # вивід поточного кандидата після множення на ваги
+    print(f"Оцінки кандидата {i+1}:", arr_candidates[i])
     result.append(sum(arr_candidates[i]))
 
 #визначення найкращої альтернативи
